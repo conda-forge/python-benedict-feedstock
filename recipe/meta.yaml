@@ -31,6 +31,7 @@ requirements:
     - six
     - toml
     - xmltodict
+    - python-fsutil
 
 test:
   imports:
