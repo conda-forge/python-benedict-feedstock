@@ -1,5 +1,5 @@
 {% set name = "python-benedict" %}
-{% set version = "0.25.4" %}
+{% set version = "0.26.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-benedict-{{ version }}.tar.gz
-  sha256: 726ebd3d035a3f3f0116bad0584c4b1c2cbcfcd4c93eda6c0a9468d4fcd7307c
+  sha256: afc4e5a0925f498e2d4040483810403acb0383edac99c13ee3039cf2bbef37a5
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
   run:
     - ftfy >=6.0.0,<7.0.0
     - mailchecker >=4.1.0,<5.0.0
+    - openpyxl >=3.0.0,<4.0.0
     - phonenumbers >=8.12.0,<9.0.0
     - python >=3.6
     - python-dateutil >=2.8.0,<3.0.0
@@ -30,6 +31,7 @@ requirements:
     - pyyaml >=6.0,<7.0
     - requests >=2.26.0,<3.0.0
     - toml >=0.10.2,<1.0.0
+    - xlrd >=2.0.0,<3.0.0
     - xmltodict >=0.12.0,<1.0.0
 
 test:
