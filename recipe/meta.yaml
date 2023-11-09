@@ -1,5 +1,5 @@
 {% set name = "python-benedict" %}
-{% set version = "0.32.1" %}
+{% set version = "0.33.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-benedict-{{ version }}.tar.gz
-  sha256: d669cbd0ca4e6cd9fbdc10b8f68ae57ac3224b49f7f55e9b2c13622c0434a148
+  sha256: 0a783caa1776cf73e890725be30be4310031f2e62d320ee8b8445fcfcb51b493
 
 build:
   number: 0
