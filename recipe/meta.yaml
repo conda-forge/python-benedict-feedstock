@@ -1,5 +1,5 @@
 {% set name = "python-benedict" %}
-{% set version = "0.33.2" %}
+{% set version = "0.34.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-benedict-{{ version }}.tar.gz
-  sha256: 662de43bffb4e127da2056447f8ddd7f6f5c89b72dd66d289cf9abd1cc2720c8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d26a59abf418400dea39785d1336f5958fd7f00a732d5cc4e0e233a94e0b2c70
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.4
+    - setuptools
   run:
     - python >=3.6
     - python-fsutil >=0.9.3,<1.0.0
